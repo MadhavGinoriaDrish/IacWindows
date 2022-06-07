@@ -1,0 +1,7 @@
+- hosts: "{{target_host}}"
+  gather_facts: true
+  tasks: 
+  - name: install namecoin
+    win_chocolatey:
+       name: namecoin
+       state: present
